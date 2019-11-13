@@ -2,7 +2,7 @@
 //  TPDeviceOrientationUtil.h
 //  tpdoublerecordingdemo
 //
-//  Created by CNTP on 2019/8/23.
+//  Created by CNTP on 2019/11/13.
 //  Copyright © 2019 TP. All rights reserved.
 //
 
@@ -11,12 +11,6 @@
 #import <AVFoundation/AVFoundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
-/*
- 手机旋转方向时
- 视频需要旋转到正向
- 生成的图片也需要旋转到正向
- */
 
 typedef NS_ENUM(NSInteger, TPDetectType) {
     TPDetectTypeFace = 0, //人脸

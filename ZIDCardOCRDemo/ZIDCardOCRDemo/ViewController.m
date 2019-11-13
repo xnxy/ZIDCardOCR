@@ -2,7 +2,7 @@
 //  ViewController.m
 //  ZIDCardOCRDemo
 //
-//  Created by CNTP on 2019/11/7.
+//  Created by CNTP on 2019/11/13.
 //
 
 #import "ViewController.h"
@@ -38,8 +38,6 @@
     ZIDCardOCRManager *manager = ZIDCardOCRManager.sharedManager;
     [manager initWithConfig:config];
     [TPVideoRecordManager sharedManager].videoStreamWithSampleBufferRefBlock = ^(CMSampleBufferRef  _Nonnull sampleBuffer, CGFloat brightnessValue) {
-//        AVCaptureDevicePosition position = [[TPVideoRecordManager sharedManager] getCaptureDevicePosition];
-//        UIImageOrientation imageOrientation = [[TPDeviceOrientationUtil sharedManager] imageOrientationWithCaptureDevicePosition:position];
 
         ZIDCardInfo *iDInfo = [manager runDetectWithSampleBuffer:sampleBuffer];
         TPSafeDispatchOnMain(^{

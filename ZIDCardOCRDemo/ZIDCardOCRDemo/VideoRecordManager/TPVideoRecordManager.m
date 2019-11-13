@@ -2,7 +2,7 @@
 //  TPVideoRecordManager.m
 //  tpdoublerecordingdemo
 //
-//  Created by CNTP on 2019/8/6.
+//  Created by CNTP on 2019/11/13.
 //  Copyright © 2019 TP. All rights reserved.
 //
 
@@ -22,14 +22,12 @@
 // 图层显示
 @property (nonatomic, strong) AVCaptureVideoPreviewLayer *videoPreviewLayer;
 
-//录制
-@property (nonatomic, assign) BOOL isRecord; //是否为录制
 
 @end
 
 @implementation TPVideoRecordManager
 
-//因为项目中主要业务就是视频  搞成单例
+//因为项目中主要业务就是视频流  搞成单例
 + (instancetype)sharedManager{
     static TPVideoRecordManager *sharedManager;
     static dispatch_once_t onceToken;
@@ -43,14 +41,6 @@
 + (instancetype)manager{
     TPVideoRecordManager *manager = [[TPVideoRecordManager alloc] init];
     return manager;
-}
-
-- (instancetype)init{
-    self = [super init];
-    if (self) {
-
-    }
-    return self;
 }
 
 - (void)beginOnView:(UIView *)view{
@@ -71,7 +61,6 @@
     [self.session startRunning];
 }
 
-//#warning --- 先固定一个方向 方向转来转去 太乱了 ----
 - (void)updateLayerFrameOnView:(UIView *)view{
     [self.session commitConfiguration];
     self.videoPreviewLayer.frame = CGRectInset(view.frame, 0, 0);
@@ -332,18 +321,6 @@
     }else{
         NSLog(@"设置设备属性过程发生错误，错误信息：%@",error.localizedDescription);
     }
-}
-
-#pragma mark --- 视频录制 ---
-
-//开始录制
-- (void)startRecord{
-    self.isRecord = YES;
-}
-
-//结束录制
-- (void)stopRecord{
-    self.isRecord = NO;
 }
 
 @end

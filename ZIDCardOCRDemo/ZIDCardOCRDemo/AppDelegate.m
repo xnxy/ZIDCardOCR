@@ -2,7 +2,7 @@
 //  AppDelegate.m
 //  ZIDCardOCRDemo
 //
-//  Created by CNTP on 2019/11/7.
+//  Created by CNTP on 2019/11/13.
 //
 
 #import "AppDelegate.h"

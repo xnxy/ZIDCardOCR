@@ -2,7 +2,7 @@
 //  TPDeviceOrientationUtil.m
 //  tpdoublerecordingdemo
 //
-//  Created by CNTP on 2019/8/23.
+//  Created by CNTP on 2019/11/13.
 //  Copyright © 2019 TP. All rights reserved.
 //
 

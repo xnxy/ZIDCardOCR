@@ -2,7 +2,7 @@
 //  TPVideoRecordManager.h
 //  tpdoublerecordingdemo
 //
-//  Created by CNTP on 2019/8/6.
+//  Created by CNTP on 2019/11/13.
 //  Copyright © 2019 TP. All rights reserved.
 //
 
@@ -41,11 +41,6 @@ typedef void(^TPVideoStreamWithSampleBufferRef)(CMSampleBufferRef sampleBuffer, 
 
 /* --- 设置聚焦点  手动聚焦 --- */
 - (void)setFocusCursorWithPoint:(CGPoint)tapPoint;
-
-/* --- 视频录制 --- */
-- (void)startRecord; //开始录制
-- (void)stopRecord; //结束录制
-//暂停录制 -- 没这个需求  先不做
 
 @end
 
