@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZIDCardOCR"
-  spec.version      = "1.0"
+  spec.version      = "1.0.0"
   spec.summary      = "中国二代身份证本地识别."
 
   # This description is used to generate tags and improve search results.
@@ -25,9 +25,10 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+    ZIDCardOCR是基于libexidcard封装的本地身份证识别的第三方库，能准确地识别出身份证的正面和反面信息。
                    DESC
 
-  spec.homepage     = "http://EXAMPLE/ZIDCardOCR"
+  spec.homepage     = "https://github.com/xnxy/ZIDCardOCR"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -39,7 +40,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.license      = "MIT (example)"
-  spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -55,7 +56,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "伟 周" => "1661583063@qq.com" }
   # Or just: spec.author    = "伟 周"
   # spec.authors            = { "伟 周" => "1661583063@qq.com" }
-  # spec.social_media_url   = "https://twitter.com/伟 周"
+  spec.social_media_url   = "https://xnxy.github.io"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -63,11 +64,9 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
-  spec.platform     = :ios, "8.0"
-
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  # spec.ios.deployment_target = "8.0"
+  spec.platform     = :ios, '8.0'
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -89,11 +88,10 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  spec.source_files  = "framework/ZIDCardOCR.framework/Headers/*.{h}"
+  spec.source_files  = "Framework/ZIDCardOCR.framework/Headers/*.{h}"
   # spec.exclude_files = "Classes/Exclude"
-  s.vendored_frameworks = "framework/ZIDCardOCR.framework"
-  spec.public_header_files = "framework/ZIDCardOCR.framework/Headers/ZIDCardOCR.h"
+  spec.vendored_frameworks = "Framework/ZIDCardOCR.framework"
+  spec.public_header_files = "Framework/ZIDCardOCR.framework/Headers/ZIDCardOCR.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -105,7 +103,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  # spec.resources = "Framework/ZIDCardOCR.framework/*.lib"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -118,7 +116,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-  spec.frameworks   = "UIKit","Foundation"
+  spec.frameworks   = "UIKit", "Foundation", "AVFoundation"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
@@ -130,7 +128,7 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+  spec.requires_arc = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
