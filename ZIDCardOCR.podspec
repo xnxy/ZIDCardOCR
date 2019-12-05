@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/xnxy/ZIDCardOCR.git", :tag => "#{spec.version}" }
   spec.requires_arc = true
   spec.ios.deployment_target = '8.0'
-  spec.vendored_frameworks = "ZIDCardOCR.framework"
+  # spec.vendored_frameworks = "ZIDCardOCR.framework"
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
