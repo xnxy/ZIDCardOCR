@@ -101,9 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				681500762398F210004D5A8F /* ZIDCardOCR.h */,
+				681500792398F210004D5A8F /* ZIDCardOCRManager.h */,
 				681500772398F210004D5A8F /* ZIDCardOCRManager.m */,
 				681500782398F210004D5A8F /* ZIDCardInfo.h */,
-				681500792398F210004D5A8F /* ZIDCardOCRManager.h */,
 				6815007A2398F210004D5A8F /* ZIDCardInfo.m */,
 			);
 			path = Public;
