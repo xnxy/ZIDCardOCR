@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ZIDCardOCR"
-  spec.version      = "1.1"
+  spec.version      = "1.1.1"
   spec.summary      = "中国二代身份证本地识别."
 
   # This description is used to generate tags and improve search results.
