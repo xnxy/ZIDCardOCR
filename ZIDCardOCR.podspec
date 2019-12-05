@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-  spec.source_files  = "ZIDCardOCR/ZIDCardOCR/Headers/**"
+  spec.source_files  = "ZIDCardOCR/ZIDCardOCR/**"
   # spec.exclude_files = "Classes/Exclude"
   spec.vendored_frameworks = "Framework/ZIDCardOCR.framework"
   # spec.public_header_files = "Framework/ZIDCardOCR.framework/Headers/ZIDCardOCR.h"
