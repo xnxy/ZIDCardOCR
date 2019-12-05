@@ -22,15 +22,15 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		6891D0EE2373AC5E003239DC /* ZIDCardOCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 6891D0EC2373AC5E003239DC /* ZIDCardOCR.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6891D1232373B205003239DC /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6891D11E2373B205003239DC /* libexidcardios.a */; };
-		6891D1242373B205003239DC /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 6891D1202373B205003239DC /* zocr0.lib */; };
-		6891D1252373B205003239DC /* commondef.h in Headers */ = {isa = PBXBuildFile; fileRef = 6891D1212373B205003239DC /* commondef.h */; };
-		6891D1262373B205003239DC /* excards.h in Headers */ = {isa = PBXBuildFile; fileRef = 6891D1222373B205003239DC /* excards.h */; };
-		6891D1312373C0F7003239DC /* ZIDCardOCRManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6891D12F2373C0F7003239DC /* ZIDCardOCRManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6891D1322373C0F7003239DC /* ZIDCardOCRManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6891D1302373C0F7003239DC /* ZIDCardOCRManager.m */; };
-		6891D13A2373F92E003239DC /* ZIDCardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6891D1382373F92E003239DC /* ZIDCardInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6891D13B2373F92E003239DC /* ZIDCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6891D1392373F92E003239DC /* ZIDCardInfo.m */; };
+		681500662398EFEB004D5A8F /* ZIDCardInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 681500592398EFEB004D5A8F /* ZIDCardInfo.m */; };
+		681500672398EFEB004D5A8F /* ZIDCardOCRManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6815005B2398EFEB004D5A8F /* ZIDCardOCRManager.m */; };
+		681500682398EFEC004D5A8F /* ZIDCardOCR.h in Headers */ = {isa = PBXBuildFile; fileRef = 6815005D2398EFEB004D5A8F /* ZIDCardOCR.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		681500692398EFEC004D5A8F /* ZIDCardInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6815005E2398EFEB004D5A8F /* ZIDCardInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6815006A2398EFEC004D5A8F /* ZIDCardOCRManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6815005F2398EFEB004D5A8F /* ZIDCardOCRManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6815006B2398EFEC004D5A8F /* libexidcardios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 681500612398EFEB004D5A8F /* libexidcardios.a */; };
+		6815006C2398EFEC004D5A8F /* zocr0.lib in Resources */ = {isa = PBXBuildFile; fileRef = 681500632398EFEB004D5A8F /* zocr0.lib */; };
+		6815006D2398EFEC004D5A8F /* commondef.h in Headers */ = {isa = PBXBuildFile; fileRef = 681500642398EFEB004D5A8F /* commondef.h */; };
+		6815006E2398EFEC004D5A8F /* excards.h in Headers */ = {isa = PBXBuildFile; fileRef = 681500652398EFEB004D5A8F /* excards.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,17 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		681500592398EFEB004D5A8F /* ZIDCardInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIDCardInfo.m; sourceTree = "<group>"; };
+		6815005B2398EFEB004D5A8F /* ZIDCardOCRManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZIDCardOCRManager.m; sourceTree = "<group>"; };
+		6815005D2398EFEB004D5A8F /* ZIDCardOCR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIDCardOCR.h; sourceTree = "<group>"; };
+		6815005E2398EFEB004D5A8F /* ZIDCardInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIDCardInfo.h; sourceTree = "<group>"; };
+		6815005F2398EFEB004D5A8F /* ZIDCardOCRManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZIDCardOCRManager.h; sourceTree = "<group>"; };
+		681500612398EFEB004D5A8F /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
+		681500632398EFEB004D5A8F /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
+		681500642398EFEB004D5A8F /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
+		681500652398EFEB004D5A8F /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
 		6891D0E92373AC5E003239DC /* ZIDCardOCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZIDCardOCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6891D0EC2373AC5E003239DC /* ZIDCardOCR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIDCardOCR.h; sourceTree = "<group>"; };
 		6891D0ED2373AC5E003239DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6891D11E2373B205003239DC /* libexidcardios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexidcardios.a; sourceTree = "<group>"; };
-		6891D1202373B205003239DC /* zocr0.lib */ = {isa = PBXFileReference; lastKnownFileType = file; path = zocr0.lib; sourceTree = "<group>"; };
-		6891D1212373B205003239DC /* commondef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = commondef.h; sourceTree = "<group>"; };
-		6891D1222373B205003239DC /* excards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = excards.h; sourceTree = "<group>"; };
-		6891D12F2373C0F7003239DC /* ZIDCardOCRManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIDCardOCRManager.h; sourceTree = "<group>"; };
-		6891D1302373C0F7003239DC /* ZIDCardOCRManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIDCardOCRManager.m; sourceTree = "<group>"; };
-		6891D1382373F92E003239DC /* ZIDCardInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZIDCardInfo.h; sourceTree = "<group>"; };
-		6891D1392373F92E003239DC /* ZIDCardInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZIDCardInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +62,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6891D1232373B205003239DC /* libexidcardios.a in Frameworks */,
+				6815006B2398EFEC004D5A8F /* libexidcardios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		681500572398EFEB004D5A8F /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				6815005C2398EFEB004D5A8F /* Public */,
+				681500582398EFEB004D5A8F /* Models */,
+				6815005A2398EFEB004D5A8F /* Manager */,
+				681500602398EFEB004D5A8F /* libexidcard */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		681500582398EFEB004D5A8F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				681500592398EFEB004D5A8F /* ZIDCardInfo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6815005A2398EFEB004D5A8F /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6815005B2398EFEB004D5A8F /* ZIDCardOCRManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		6815005C2398EFEB004D5A8F /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				6815005D2398EFEB004D5A8F /* ZIDCardOCR.h */,
+				6815005E2398EFEB004D5A8F /* ZIDCardInfo.h */,
+				6815005F2398EFEB004D5A8F /* ZIDCardOCRManager.h */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		681500602398EFEB004D5A8F /* libexidcard */ = {
+			isa = PBXGroup;
+			children = (
+				681500612398EFEB004D5A8F /* libexidcardios.a */,
+				681500622398EFEB004D5A8F /* dicts */,
+				681500642398EFEB004D5A8F /* commondef.h */,
+				681500652398EFEB004D5A8F /* excards.h */,
+			);
+			path = libexidcard;
+			sourceTree = "<group>";
+		};
+		681500622398EFEB004D5A8F /* dicts */ = {
+			isa = PBXGroup;
+			children = (
+				681500632398EFEB004D5A8F /* zocr0.lib */,
+			);
+			path = dicts;
+			sourceTree = "<group>";
+		};
 		6891D0DF2373AC5E003239DC = {
 			isa = PBXGroup;
 			children = (
@@ -88,50 +144,10 @@
 		6891D0EB2373AC5E003239DC /* ZIDCardOCR */ = {
 			isa = PBXGroup;
 			children = (
-				6891D11D2373B205003239DC /* libexidcard */,
-				6891D12E2373C0D0003239DC /* Manager */,
-				6891D1372373F90C003239DC /* Models */,
-				6891D0EC2373AC5E003239DC /* ZIDCardOCR.h */,
+				681500572398EFEB004D5A8F /* OCR */,
 				6891D0ED2373AC5E003239DC /* Info.plist */,
 			);
 			path = ZIDCardOCR;
-			sourceTree = "<group>";
-		};
-		6891D11D2373B205003239DC /* libexidcard */ = {
-			isa = PBXGroup;
-			children = (
-				6891D11E2373B205003239DC /* libexidcardios.a */,
-				6891D11F2373B205003239DC /* dicts */,
-				6891D1212373B205003239DC /* commondef.h */,
-				6891D1222373B205003239DC /* excards.h */,
-			);
-			path = libexidcard;
-			sourceTree = "<group>";
-		};
-		6891D11F2373B205003239DC /* dicts */ = {
-			isa = PBXGroup;
-			children = (
-				6891D1202373B205003239DC /* zocr0.lib */,
-			);
-			path = dicts;
-			sourceTree = "<group>";
-		};
-		6891D12E2373C0D0003239DC /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				6891D12F2373C0F7003239DC /* ZIDCardOCRManager.h */,
-				6891D1302373C0F7003239DC /* ZIDCardOCRManager.m */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		6891D1372373F90C003239DC /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				6891D1382373F92E003239DC /* ZIDCardInfo.h */,
-				6891D1392373F92E003239DC /* ZIDCardInfo.m */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,11 +157,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6891D0EE2373AC5E003239DC /* ZIDCardOCR.h in Headers */,
-				6891D1312373C0F7003239DC /* ZIDCardOCRManager.h in Headers */,
-				6891D13A2373F92E003239DC /* ZIDCardInfo.h in Headers */,
-				6891D1262373B205003239DC /* excards.h in Headers */,
-				6891D1252373B205003239DC /* commondef.h in Headers */,
+				681500682398EFEC004D5A8F /* ZIDCardOCR.h in Headers */,
+				6815006A2398EFEC004D5A8F /* ZIDCardOCRManager.h in Headers */,
+				681500692398EFEC004D5A8F /* ZIDCardInfo.h in Headers */,
+				6815006E2398EFEC004D5A8F /* excards.h in Headers */,
+				6815006D2398EFEC004D5A8F /* commondef.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6891D1242373B205003239DC /* zocr0.lib in Resources */,
+				6815006C2398EFEC004D5A8F /* zocr0.lib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6891D1322373C0F7003239DC /* ZIDCardOCRManager.m in Sources */,
-				6891D13B2373F92E003239DC /* ZIDCardInfo.m in Sources */,
+				681500672398EFEB004D5A8F /* ZIDCardOCRManager.m in Sources */,
+				681500662398EFEB004D5A8F /* ZIDCardInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +412,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZIDCardOCR/libexidcard",
+					"$(PROJECT_DIR)/ZIDCardOCR/OCR/libexidcard",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZIDCardOCR;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -425,6 +442,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ZIDCardOCR/libexidcard",
+					"$(PROJECT_DIR)/ZIDCardOCR/OCR/libexidcard",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ZIDCardOCR;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
