@@ -7,7 +7,10 @@
 
 #import "ZIDCardOCRManager.h"
 #import "ZIDCardInfo.h"
+#if TARGET_IPHONE_SIMULATOR
+#else
 #import "excards.h"
+#endif
 
 @interface ZIDCardOCRManager()
 
@@ -41,27 +44,39 @@
     self.config = config;
     NSString *workPath = [NSString stringWithFormat:@"%@/%@",self.config.workPath,@"Frameworks/ZIDCardOCR.framework"];
     const char *thePath = [workPath UTF8String];
+#if TARGET_IPHONE_SIMULATOR
+    [self printLog:@"模拟器不支持识别"];
+#else
     int ret = EXCARDS_Init(thePath);
     if (ret != 0) {
         [self printLog:@"初始化失败"];
     }else{
         [self printLog:@"初始化成功"];
     }
+#endif
 }
 
 - (ZIDCardInfo *)runDetectWithSampleBuffer:(CMSampleBufferRef)sampleBuffer{
     ZIDCardInfo *idCardInfo = [[ZIDCardInfo alloc] init];
+    if (TARGET_IPHONE_SIMULATOR) {
+        [self printLog:@"模拟器不支持识别"];
+        return idCardInfo;
+    }
     if (!sampleBuffer) {
         [self printLog:@"请传入sampleBuffer"];
+        return idCardInfo;
     }
+#if TARGET_IPHONE_SIMULATOR
+    [self printLog:@"模拟器不支持识别"];
+#else
     CFRetain(sampleBuffer);
     CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
-//    CVBufferRetain(imageBuffer);
-//    idCardInfo.image = [self getImageStream:imageBuffer];
+    //    CVBufferRetain(imageBuffer);
+    //    idCardInfo.image = [self getImageStream:imageBuffer];
     // Lock the image buffer
     if (CVPixelBufferLockBaseAddress(imageBuffer, 0) != kCVReturnSuccess) {
         [self printLog:@"sampleBuffer缺省"];
-//        CVBufferRelease(imageBuffer);
+        //        CVBufferRelease(imageBuffer);
         CFRelease(sampleBuffer);
         return idCardInfo;
     }
@@ -124,8 +139,9 @@
     }
 
     CVPixelBufferUnlockBaseAddress(imageBuffer, 0);
-//    CVBufferRelease(imageBuffer);
+    //    CVBufferRelease(imageBuffer);
     CFRelease(sampleBuffer);
+#endif
     return idCardInfo;
 }
 
