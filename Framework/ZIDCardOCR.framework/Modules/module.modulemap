@@ -1,0 +1,6 @@
+framework module ZIDCardOCR {
+  umbrella header "ZIDCardOCR.h"
+
+  export *
+  module * { export * }
+}
