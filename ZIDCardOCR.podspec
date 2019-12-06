@@ -24,7 +24,4 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '8.0'
   spec.vendored_frameworks ='ZIDCardOCR.framework'
 
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
-
 end
