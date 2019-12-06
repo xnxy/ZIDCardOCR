@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
                    DESC
 
   spec.homepage     = "https://github.com/xnxy/ZIDCardOCR"
-  spec.license      = { :type => "MIT" }
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
   spec.author             = { "伟 周" => "1661583063@qq.com" }
   spec.social_media_url   = "https://xnxy.github.io"
   spec.source       = { :http => "https://zocr.oss-cn-beijing.aliyuncs.com/ZIDCardOCR-1.0.zip" }
