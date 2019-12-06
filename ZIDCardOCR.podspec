@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT" }
   spec.author             = { "伟 周" => "1661583063@qq.com" }
   spec.social_media_url   = "https://xnxy.github.io"
-  spec.source       = { :https => "https://zocr.oss-cn-beijing.aliyuncs.com/ZIDCardOCR-1.0.zip" }
+  spec.source       = { :http => "https://zocr.oss-cn-beijing.aliyuncs.com/ZIDCardOCR-1.0.zip" }
   spec.requires_arc = true
   spec.ios.deployment_target = '8.0'
   spec.vendored_frameworks ='ZIDCardOCR.framework'
