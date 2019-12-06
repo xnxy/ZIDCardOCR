@@ -6,3 +6,6 @@
 cd 到 ZScripts目录
 
 运行： sh build.sh 即可自动打包
+
+### pod集成
+pod 'ZIDCardOCR'
